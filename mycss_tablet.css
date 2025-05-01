@@ -1,0 +1,53 @@
+
+@media screen and (max-width: 700px){
+    h1{
+        background-color: purple;
+        color: white;
+        text-align: center;
+    }
+
+    h2{
+        width: 50%;
+        border: 4px solid purple;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    h3{
+        background-color: black;
+        color: white;
+        width: 50%;
+        border: 4px solid purple;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    body{
+        background-color: pink;
+        color: black;
+    }
+
+    p{
+        width: 50%;
+        border: 2px solid purple;
+        border-radius: 5px;
+    }
+
+    ul{
+        width: 50%;
+        border: 4px solid purple;
+        border-radius: 5px;
+    }
+
+    li{
+        width: 50%;
+        
+        text-align: center;
+       
+    }
+
+    img{
+        border: 4px solid purple;
+        border-radius: 5px;
+    }
+}
