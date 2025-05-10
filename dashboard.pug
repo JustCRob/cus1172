@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title Video Dashboard
+    link(rel="stylesheet", href="/css/dashboard.css")
+  body
+    h1 Video Dashboard
+
+    nav
+      a(href="/video/dashboard/all") All Videos |
+      a(href="/video/dashboard/mine") My Videos |
+      a(href="/video/new_video") Upload New Video
+
+    hr
+
+    if videos && videos.length > 0
+      each video in videos
+        div
+          h3= video.title
+          if video.thumbnail
+            a(href=video.vidLink, target="_blank")
+              img(src=video.thumbnail, alt=video.title, width="200")
+          else
+            a(href=video.vidLink, target="_blank")
+              img(src="default-thumbnail.png", alt=video.title, width="200")
+          p Uploaded by #{video.uploader}
+          hr
+    else
+      p No videos found.

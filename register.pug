@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Registration Page
+    link(rel="stylesheet", href="/css/register.css")
+
+  body
+    h1 Account Registration
+    if error
+      p(style="color:red") #{error}
+
+    form(action='/auth1/register', method='POST')
+
+      br
+      label(for='email') Email:
+      input(type='email', id='email', name='email', required=true)
+      br
+      br
+
+      label(for='username') Username:
+      input(type='text', id='username', name='username', required=true)
+      br
+      br
+
+      label(for='password') Password:
+      input(type='password', id='password', name='password', required=true)
+      br
+      br
+
+      button(type='submit') Register
+      br
+      br

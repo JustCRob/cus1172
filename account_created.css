@@ -1,0 +1,21 @@
+body {
+    background-color : #8c143a;
+}
+
+a {
+    color:white;
+    background-color: #8c143a;
+    text-align : center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}

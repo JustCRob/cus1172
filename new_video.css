@@ -1,0 +1,20 @@
+body{
+    background-color: #8c143a;
+}
+
+h1{
+    color: white;
+}
+
+form {
+    color : white;
+    background-color: #8c143a;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

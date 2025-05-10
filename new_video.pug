@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title Upload New Video
+    link(rel="stylesheet", href="/css/new_video.css")
+  body
+    h1 Upload a New Video
+
+    if success
+        script.
+            alert("#{success}")
+
+    form(action="/video/new" method="POST")
+      div
+        label(for="url") Video URL:
+        input(type="url" name="vidLink" id="Video URL" required)
+        br
+        br
+      div
+        label(for="title") Title:
+        input(type="text" name="title" id="title" required)
+        br
+        br
+      div
+        label(for="thumbnail") Thumbnail address:
+        input(type="text" name="thumbnail" id="thumbnail" required)
+        br
+        br
+      div
+        button(type="submit") Add video
+        br
+        br
+        br
+        br
+      div
+        a(href="/video/dashboard/all") Back to Dashboard
+        br
+        br

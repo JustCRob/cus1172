@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+  
+    title Welcome
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
+    link(rel='stylesheet', href='css/welcome.css')
+
+  body
+
+    h1 Welcome! Please Register or Log in.
+    .row
+      .col-md-4.d-flex.justify-content-center.align-items-center
+        a.btn.btn-success.btn-lg(href="/auth1/register") Register 
+      .col-md-4
+        h2 Qatar 2022 Clips
+        img(src="https://iffhs.com/storage/img/posts/fifa-world-cup-22.jpg")
+      .col-md-4.d-flex.justify-content-center.align-items-center
+        a.btn.btn-success.btn-lg(href="/auth1/login") Login 
